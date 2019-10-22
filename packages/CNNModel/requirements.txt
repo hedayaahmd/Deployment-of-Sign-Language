@@ -6,3 +6,7 @@ numpy==1.16.1
 
 # testing
 pytest==4.0.2
+
+
+#fetch dataset
+kaggle==1.5.1.1
