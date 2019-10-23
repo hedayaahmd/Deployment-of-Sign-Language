@@ -4,7 +4,7 @@ numpy==1.16.1
 jupyter==1.0.0
 matplotlib==3.0.2
 scikit-learn==0.20.2
-Keras==2.2.0
+Keras==2.2.4
 opencv-python==4.0.0.21
 h5py==2.9.0
 Theano==0.9.0
