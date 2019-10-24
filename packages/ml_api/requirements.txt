@@ -1,2 +1,10 @@
 # api
 flask==1.0.2
+
+
+--extra-index-url=${PIP_EXTRA_INDEX_URL}
+
+
+
+# Install from gemfury
+CNNModel==0.1.0

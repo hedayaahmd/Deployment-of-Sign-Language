@@ -16,7 +16,7 @@ jobs:
             chmod +x ./scripts/fetch_kaggle_dataset.sh
             ./scripts/fetch_kaggle_dataset.sh
             py.test -vv packages/CNNModel/tests
- test_ml_api:
+  test_ml_api:
     working_directory: ~/project
     docker:
       - image: circleci/python:3.7.2
