@@ -8,3 +8,6 @@ flask==1.0.2
 
 # Install from gemfury
 CNNModel==0.0.0
+
+# testing
+pytest==5.2.2
