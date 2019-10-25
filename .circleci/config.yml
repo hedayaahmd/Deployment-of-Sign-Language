@@ -15,7 +15,7 @@ jobs:
             pip install -r packages/CNNModel/requirements.txt
             chmod +x ./scripts/fetch_kaggle_dataset.sh
             ./scripts/fetch_kaggle_dataset.sh
-            py.test -vv packages/CNNModel/tests
+            pytest -v packages/CNNModel/tests
   test_ml_api:
     working_directory: ~/project
     docker:
@@ -29,7 +29,7 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
-            py.test -vv packages/ml_api/tests
+            pytest -v packages/ml_api/tests
   train_and_upload_CNNModel:
     working_directory: ~/project
     docker:
