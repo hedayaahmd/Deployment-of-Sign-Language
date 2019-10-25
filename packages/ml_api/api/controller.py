@@ -44,8 +44,8 @@ def predict_video():
 
         #Basic file extension validation
 
-        if file and allowed_file(file.filename=):
-            filename=secure_filename(file.filename=)
+        if file and allowed_file(file.filename):
+            filename=secure_filename(file.filename)
 
         # save the file to upload directory
         file.save(os.path.join(UPLOAD_FOLDER,filename))
