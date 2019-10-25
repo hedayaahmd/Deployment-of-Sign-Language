@@ -54,8 +54,8 @@ def predict_video():
 
         #perform predction
 
-        result =make_single_prediction(video_name: str=filename,
-                                        video_directory: str=UPLOAD_FOLDER)
+        result =make_single_prediction(video_name=filename,
+                                        video_directory=UPLOAD_FOLDER)
         _logger.depug(f'Outputs: {result}')
 
         readable_predictions = result.get('readable_predictions')
