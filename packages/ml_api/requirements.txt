@@ -11,3 +11,5 @@ CNNModel==0.0.0
 
 # testing
 pytest==5.2.2
+
+pandas==0.25.2
