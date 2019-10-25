@@ -13,7 +13,7 @@ def create_app(*,config_obj) -> Flask:
     flask_app.config.from_object(config_obj)
 
 
-    from api.controller import prediction_app
+    from ml_api.api.controller import prediction_app
     flask_app.register_blueprint(prediction_app)
     _logger.debug('Application instance created')
 
