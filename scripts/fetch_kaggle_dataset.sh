@@ -1,5 +1,5 @@
 
-TRAINING_DATA_URL="hedayaahmd/sign-word-dataset"
+TRAINING_DATA_URL="hedayaahmd/sign-language-word-dataset"
 NOW=$(date)
 
 kaggle datasets download -d $TRAINING_DATA_URL -p packages/CNNModel/CNNModel/datasets/ && \
