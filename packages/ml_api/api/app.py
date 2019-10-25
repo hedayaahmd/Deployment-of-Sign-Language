@@ -1,6 +1,6 @@
 from flask import Flask
 
-from api.config import get_logger
+from ml_api.api.config import get_logger
 
 
 _logger = get_logger(logger_name=__name__)
