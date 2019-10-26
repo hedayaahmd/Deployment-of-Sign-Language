@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
-
 import os
-import pathlib
-import CNNModel
 
+PWD = os.path.dirname(os.path.abspath(__file__))
+PACKAGE_ROOT = os.path.abspath(os.path.join(PWD, '..'))
+DATASET_DIR = os.path.join(PACKAGE_ROOT, 'datasets')
+TRAINED_MODEL_DIR = os.path.join(PACKAGE_ROOT, 'trained_models')
+DATA_FOLDER = os.path.join(DATASET_DIR, 'sign-language-word-dataset')
 
-PACKAGE_ROOT = pathlib.Path(CNNModel.__file__).resolve().parent
-TRAINED_MODEL_DIR = PACKAGE_ROOT / 'trained_models'
-DATA_DIR = PACKAGE_ROOT / 'datasets'
 
 # MODEL FITTING
 VIDEO_SIZE=32
@@ -17,20 +16,11 @@ EPOCHS=50# 1 for testing, 10 for final model
 NUMBER_CLASSES=4
 #EPOCHS = int(os.environ.get('EPOCHS', 1))  # 1 for testing, 10 for final model
 
-# MODEL PERSISTING
-DATASET_NAME='sign-language-word-dataset'
-DATA_FOLDER=os.path.join(DATA_DIR,DATASET_NAME)
 
 MODEL_NAME = 'cnn_model'
 PIPELINE_NAME = 'cnn_pipe'
 CLASSES_NAME = 'classes'
 ENCODER_NAME = 'encoder'
-'''
-SAVED_WORK_DIR=os.path.join(PACKAGE_ROOT,'trained_models')
-MODEL_PATH =os.path.join(SAVED_WORK_DIR, MODEL_NAME)
-PIPELINE_PATH = os.path.join(SAVED_WORK_DIR,PIPELINE_NAME)
-CLASSES_PATH = os.path.join(SAVED_WORK_DIR,CLASSES_NAME)
-ENCODER_PATH = os.path.join(SAVED_WORK_DIR,ENCODER_NAME)'''
 
 
 with open(os.path.join(PACKAGE_ROOT, 'VERSION')) as version_file:

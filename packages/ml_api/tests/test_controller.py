@@ -5,7 +5,7 @@ import os
 
 from CNNModel.config import config as ccn_config
 
-from ml_api.api import __version__ as api_version
+from api import __version__ as api_version
 from CNNModel import __version__ as _version
 
 def test_sign_endpoint_returns_200(flask_test_app):

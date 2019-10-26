@@ -7,6 +7,7 @@ import sys
 
 PACKAGE_ROOT=pathlib.Path(__file__).resolve().parent.parent
 
+print("package root",PACKAGE_ROOT)
 FORMATTER = logging.Formatter(
     "%(asctime)s — %(name)s — %(levelname)s —"
     "%(funcName)s:%(lineno)d — %(message)s")
@@ -44,7 +45,7 @@ def get_logger(*, logger_name):
     logger.addHandler(get_console_handler())
     logger.addHandler(get_file_handler())
     logger.propagate = False
-    
+
     return logger
 
 
