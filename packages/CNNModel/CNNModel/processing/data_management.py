@@ -138,7 +138,7 @@ if __name__ == '__main__':
     videos_df = load_videos_paths(config.DATA_FOLDER)
     print(videos_df.head())
 
-    TEST_DIR=os.path.join(config.DATA_DIR,'test_data')
+    TEST_DIR=os.path.join(config.DATASET_DIR,'test_data')
     Test_folder =os.path.join(TEST_DIR,'buy')
     video_1=load_single_video(data_folder=Test_folder,filename='buy_14.avi')
     print(video_1)

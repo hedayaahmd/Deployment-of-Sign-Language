@@ -30,7 +30,7 @@ def test_version_endpoint_returns_version(flask_test_app):
 
 def test_classifier_endpoint_returns_prediction(flask_test_app):
     pass
-    '''data_dir = os.path.abspath(os.path.join(ccn_config.DATA_FOLDER, os.pardir))
+    data_dir = os.path.abspath(os.path.join(ccn_config.DATA_FOLDER, os.pardir))
     test_dir = os.path.join(data_dir, 'test_data')
     buy_dir = os.path.join(test_dir, 'buy')
     buy_vid = os.path.join(buy_dir, 'buy_14.avi')
@@ -48,4 +48,4 @@ def test_classifier_endpoint_returns_prediction(flask_test_app):
     # Then
     assert response.status_code == 200
     response_json = json.loads(response.data)
-    assert response_json['readable_predictions']'''
+    assert response_json['readable_predictions']

@@ -74,10 +74,10 @@ if __name__ == '__main__':
     '''
     for making multiple pridection
     '''
-    video_df=dm.load_videos_paths(config.DATA_FOLDER)
+    #video_df=dm.load_videos_paths(config.DATA_FOLDER)
 
-    results=make_bulk_prediction(videos_df=video_df['video'])
-    print(results)
+    #results=make_bulk_prediction(videos_df=video_df['video'])
+    #print(results)
 
 
     '''
@@ -85,7 +85,7 @@ if __name__ == '__main__':
     '''
     filename = 'angry_14.avi'
     expected_classification = 'angry'
-    test_data_dir = os.path.join(config.DATA_DIR, 'test_data')
+    test_data_dir = os.path.join(config.DATASET_DIR, 'test_data')
     angry_dir = os.path.join(test_data_dir, 'angry')
 
     # When
