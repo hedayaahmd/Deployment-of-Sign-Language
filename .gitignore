@@ -1,0 +1,44 @@
+__pycache__/
+
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+# pycharm
+.idea/
+
+
+# datafiles
+sign-language-word-dataset.zip
+
+# all logs
+logs/
+
+# trained models (will be created in CI)
+packages/CNNModel/CNNModel/trained_models/*.pkl
+packages/CNNModel/CNNModel/trained_models/*.h5
+*.h5
+packages/CNNModel/CNNModel/datasets/training_data_reference.txt
+
+.DS_Store
+
+packages/ml_api/uploads/*
