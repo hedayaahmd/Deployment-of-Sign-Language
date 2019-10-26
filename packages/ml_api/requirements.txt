@@ -5,32 +5,9 @@
 flask==1.0.2
 
 
-
-
-
 # Install from gemfury
 CNNModel==0.1.0
 
 
-
-
-#i will remove all
-#production requirements
-pandas==0.25.2
-numpy==1.16.1
-jupyter==1.0.0
-matplotlib==3.0.2
-scikit-learn==0.20.2
-Keras==2.2.4
-opencv-python==4.0.0.21
-h5py==2.9.0
-Theano==0.9.0
-TensorFlow == 1.14.0
-# testing
-pytest==5.2.2
-
-
-#fetch dataset
-kaggle==1.5.1.1
-
-attrs==19.1.0
+# Deployment
+gunicorn==19.9.0
