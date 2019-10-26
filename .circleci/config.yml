@@ -1,4 +1,3 @@
-version: 2
 
 version: 2
 
@@ -21,8 +20,6 @@ fetch_data: &fetch_data
       source venv/bin/activate
       chmod +x ./scripts/fetch_kaggle_dataset.sh
       ./scripts/fetch_kaggle_dataset.sh
-
-
 
 jobs:
   test_CNNModel:
@@ -48,7 +45,7 @@ jobs:
             py.test -vv packages/CNNModel/tests
 
 
- test_ml_api:
+  test_ml_api:
     <<: *defaults
     steps:
       - checkout
@@ -90,6 +87,7 @@ jobs:
             . venv/bin/activate
             chmod +x ./scripts/publish_model.sh
             ./scripts/publish_model.sh ./packages/CNNModel/
+
 workflows:
   version: 2
   test-all:
