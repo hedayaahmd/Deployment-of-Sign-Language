@@ -6,7 +6,7 @@ from CNNModel.config import config
 
 @pytest.fixture
 def buy_dir():
-    test_data_dir = os.path.join(config.DATA_DIR, 'test_data')
+    test_data_dir = os.path.join(config.DATA_FOLDER, 'test_data')
     buy_dir = os.path.join(test_data_dir, 'buy')
 
     return buy_dir
@@ -14,7 +14,7 @@ def buy_dir():
 
 @pytest.fixture
 def angry_dir():
-    test_data_dir = os.path.join(config.DATA_DIR, 'test_data')
+    test_data_dir = os.path.join(config.DATA_FOLDER, 'test_data')
     angry_dir = os.path.join(test_data_dir, 'angry')
 
     return angry_dir
