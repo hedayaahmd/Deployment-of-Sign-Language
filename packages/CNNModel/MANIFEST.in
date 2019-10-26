@@ -1,0 +1,17 @@
+include *.txt
+include *.md
+include *.cfg
+include *.pkl
+recursive-include ./CNNModel/*.py
+
+include CNNModel/trained_models/*.pkl
+include CNNModel/trained_models/*.h5
+include CNNModel/VERSION
+include CNNModel/datasets/test_data/buy/buy_14.avi
+include CNNModel/datasets/test_data/angry/angry_14.avi
+
+include ./requirements.txt
+exclude *.log
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

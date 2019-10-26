@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 import io
 import os
@@ -10,10 +9,10 @@ from setuptools import find_packages, setup
 # Package meta-data.
 NAME = 'CNNModel'
 DESCRIPTION = 'Train and deploy neural network model.'
-URL = 'your github project'
-EMAIL = 'your_email@email.com'
-AUTHOR = 'Your name'
-REQUIRES_PYTHON = '>=3.6.8'
+URL = 'https://github.com/hedayaahmd/Deployment-of-Sign-Language.git'
+EMAIL = 'hedaya.ahmd@gmail.com'
+AUTHOR = 'Hedaya Ahmd'
+REQUIRES_PYTHON = '>=3.6.0'
 
 
 # What packages are required for this module to be executed?
@@ -28,7 +27,7 @@ def list_reqs(fname='requirements.txt'):
 # If you do change the License, remember to change the
 # Trove Classifier for that!
 
-here = os.path.dirname(os.path.abspath('__file__'))
+here = os.path.abspath(os.path.dirname(__file__))
 
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.md' is present in your MANIFEST.in file!
@@ -40,13 +39,18 @@ except FileNotFoundError:
 
 
 # Load the package's __version__.py module as a dictionary.
-ROOT_DIR = Path('__file__').resolve().parent
+ROOT_DIR = Path(__file__).resolve().parent
 PACKAGE_DIR = ROOT_DIR / NAME
+about = {}
+with open(PACKAGE_DIR / 'VERSION') as f:
+    _version = f.read().strip()
+    about['__version__'] = _version
 
 
 # Where the magic happens:
 setup(
     name=NAME,
+    version=about['__version__'],
     description=DESCRIPTION,
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -56,6 +60,7 @@ setup(
     url=URL,
     packages=find_packages(exclude=('tests',)),
     package_data={'CNNModel': ['VERSION']},
+    install_requires=list_reqs(),
     extras_require={},
     include_package_data=True,
     license='MIT',
