@@ -20,6 +20,7 @@ NUMBER_CLASSES=4
 # MODEL PERSISTING
 DATASET_NAME='sign-language-word-dataset'
 DATA_FOLDER=os.path.join(DATA_DIR,DATASET_NAME)
+
 MODEL_NAME = 'cnn_model'
 PIPELINE_NAME = 'cnn_pipe'
 CLASSES_NAME = 'classes'
