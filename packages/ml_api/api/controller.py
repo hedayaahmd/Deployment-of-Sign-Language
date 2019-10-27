@@ -4,12 +4,12 @@ from CNNModel.predict import make_single_prediction
 from werkzeug.utils import secure_filename
 
 from CNNModel import __version__ as _version
-from ml_api.api import __version__ as api_version
-from ml_api.api.validation import allowed_file
+from api import __version__ as api_version
+from api.validation import allowed_file
 
 import os
 
-from ml_api.api.config import get_logger ,UPLOAD_FOLDER
+from api.config import get_logger ,UPLOAD_FOLDER
 #from api
 
 _logger=get_logger(logger_name=__name__)

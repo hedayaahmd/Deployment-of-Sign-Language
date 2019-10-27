@@ -1,7 +1,7 @@
 import pytest
 
-from ml_api.api.config import TestingConfig
-from ml_api.api.app import create_app
+from api.config import TestingConfig
+from api.app import create_app
 
 
 
