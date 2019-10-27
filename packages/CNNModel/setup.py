@@ -28,7 +28,7 @@ def list_reqs(fname='requirements.txt'):
 # Trove Classifier for that!
 
 here = os.path.abspath(os.path.dirname(__file__))
-
+print("here",here)
 # Import the README and use it as the long-description.
 # Note: this will only work if 'README.md' is present in your MANIFEST.in file!
 try:
@@ -40,7 +40,9 @@ except FileNotFoundError:
 
 # Load the package's __version__.py module as a dictionary.
 ROOT_DIR = Path(__file__).resolve().parent
+print("root dir",ROOT_DIR)
 PACKAGE_DIR = ROOT_DIR / NAME
+print("Package Dir",PACKAGE_DIR)
 about = {}
 with open(PACKAGE_DIR / 'VERSION') as f:
     _version = f.read().strip()

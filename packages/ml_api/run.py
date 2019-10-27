@@ -1,5 +1,5 @@
-from api.app import create_app
-from api.config import DevelopmentConfig,ProductionConfig
+from ml_api.api.app import create_app
+from ml_api.api.config import DevelopmentConfig,ProductionConfig
 
 #application=create_app(config_obj=DevelopmentConfig)
 application=create_app(config_obj=ProductionConfig)
