@@ -1,6 +1,6 @@
 import typing as t
 
-from ml_api.api import config
+from api import config
 
 def allowed_file(filename):
     return '.' in filename and \
