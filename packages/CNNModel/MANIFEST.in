@@ -3,6 +3,7 @@ include *.md
 include *.cfg
 include *.pkl
 recursive-include ./CNNModel/*.py
+recursive-include ./ml_api/*.py
 
 include CNNModel/trained_models/*.pkl
 include CNNModel/trained_models/*.h5
