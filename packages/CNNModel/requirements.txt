@@ -12,8 +12,9 @@ TensorFlow == 1.14.0
 # testing
 pytest==5.2.2
 
-opencv-python-headless==4.1.1.26
-opencv-contrib-python-headless==4.1.1.26
+libsm6==1.2.2.1
+libxrender1==0.9.10.1
+libfontconfig1==2.13.1.2
 
 #fetch dataset
 kaggle==1.5.1.1
