@@ -12,6 +12,8 @@ TensorFlow == 1.14.0
 # testing
 pytest==5.2.2
 
+opencv-python-headless==4.1.1.26
+opencv-contrib-python-headless==4.1.1.26
 
 #fetch dataset
 kaggle==1.5.1.1
