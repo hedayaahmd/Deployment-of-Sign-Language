@@ -20,7 +20,7 @@ fetch_data: &fetch_data
       chmod +x ./scripts/fetch_kaggle_dataset.sh
       ./scripts/fetch_kaggle_dataset.sh
 jobs:
-  test_CNNModel:
+  test_signModel:
     <<: *defaults
     steps:
       - checkout
@@ -61,7 +61,7 @@ jobs:
           paths:
             - "/venv"
 
-  train_and_upload_CNNModel:
+  train_and_upload_signModel:
     <<: *defaults
     steps:
       - checkout
