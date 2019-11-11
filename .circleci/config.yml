@@ -87,11 +87,11 @@ workflows:
   version: 2
   test-all:
     jobs:
-      - test_CNNModel
+      - test_signModel
       - test_ml_api
-      - train_and_upload_CNNModel:
+      - train_and_upload_signModel:
           requires:
-            - test_CNNModel
+            - test_signModel
             - test_ml_api
           # filters:
           #   branches:
