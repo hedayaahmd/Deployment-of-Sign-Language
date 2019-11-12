@@ -101,10 +101,10 @@ workflows:
           requires:
             - test_CNNModel
             - test_ml_api
-            filters:
-              branches:
-                only:
-                  - master
+          filters:
+            branches:
+              only:
+                - master
       - deploy_to_heroku:
           requires:
             - train_and_upload_CNNModel
