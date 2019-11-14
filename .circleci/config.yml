@@ -59,7 +59,7 @@ jobs:
       - save_cache:
           key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
           paths:
-            - "/venv"
+            - "/venv/ml_api"
 
   train_and_upload_CNNModel:
     <<: *defaults
