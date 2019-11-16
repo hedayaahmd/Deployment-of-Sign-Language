@@ -55,7 +55,6 @@ jobs:
             . venv/bin/activate
             pip install --upgrade pip
             pip install -r packages/ml_api/requirements.txt
-            pip install -e 
             py.test -vv packages/ml_api/tests
       - save_cache:
           key: py-deps-{{ checksum "packages/ml_api/requirements.txt" }}
@@ -101,7 +100,6 @@ workflows:
       - train_and_upload_CNNModel:
           requires:
             - test_CNNModel
-            - test_ml_api
           filters:
             branches:
               only:
