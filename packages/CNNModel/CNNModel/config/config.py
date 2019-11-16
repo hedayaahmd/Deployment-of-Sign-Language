@@ -7,7 +7,6 @@ DATASET_DIR = os.path.join(PACKAGE_ROOT, 'datasets')
 TRAINED_MODEL_DIR = os.path.join(PACKAGE_ROOT, 'trained_models')
 DATA_FOLDER = os.path.join(DATASET_DIR, 'sign-language-word-dataset')
 
-
 # MODEL FITTING
 VIDEO_SIZE=32
 VIDEO_DEPTH=15

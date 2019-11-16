@@ -29,7 +29,6 @@ def test_version_endpoint_returns_version(flask_test_app):
 
 
 def test_classifier_endpoint_returns_prediction(flask_test_app):
-    pass
     data_dir = os.path.abspath(os.path.join(ccn_config.DATA_FOLDER, os.pardir))
     test_dir = os.path.join(data_dir, 'test_data')
     buy_dir = os.path.join(test_dir, 'buy')
