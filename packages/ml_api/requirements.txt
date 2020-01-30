@@ -6,7 +6,7 @@ flask==1.0.2
 
 
 # Install from gemfury
-CNNModel==0.1.0
+CNNModel==0.1.1
 
 
 
